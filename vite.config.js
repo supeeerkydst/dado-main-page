@@ -1,10 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
-// replace with your GitHub username and repo name
-const repoName = 'supeeerkydst.github.io/dado-main-page';
-
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: `/${repoName}/`,
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 });

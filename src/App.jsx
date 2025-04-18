@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin } from "lucide-react";
+import './index.css';
 
 const sections = ["Skills", "Projects", "Activities", "Affiliations", "Gallery", "Contact"];
 
